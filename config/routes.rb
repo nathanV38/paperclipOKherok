@@ -1,4 +1,7 @@
 Paperclip::Application.routes.draw do
+  resources :garment_images
+
+
   resources :sizes
 
 

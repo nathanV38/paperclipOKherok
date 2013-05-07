@@ -1,0 +1,29 @@
+<h1>Listing garment_images</h1>
+
+<table>
+  <tr>
+    <th>Caption</th>
+    <th></th>
+    <th>Garment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @garment_images.each do |garment_image| %>
+  <tr>
+    <td><%= garment_image.caption %></td>
+    <td><%= garment_image. %></td>
+    <td><%= garment_image.garment_id %></td>
+    <td><%= garment_image. %></td>
+    <td><%= link_to 'Show', garment_image %></td>
+    <td><%= link_to 'Edit', edit_garment_image_path(garment_image) %></td>
+    <td><%= link_to 'Destroy', garment_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Garment image', new_garment_image_path %>

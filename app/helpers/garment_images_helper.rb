@@ -1,0 +1,2 @@
+module GarmentImagesHelper
+end
