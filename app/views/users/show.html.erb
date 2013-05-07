@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag  @user.photo.url(:small) %>
+</p>
+</br>
+<p>
+  <%= image_tag  @user.photo.url(:thumb) %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @user.category.name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>age:</b>
+  <%= @user.age %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @user.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
