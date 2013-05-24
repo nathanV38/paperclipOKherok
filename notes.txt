@@ -10,3 +10,8 @@ il fera l'objet d'un post sur ton mur Facebook.
 http://modernizr.com
 
 http://theodin.co.uk/blog/ajax/contactable-jquery-plugin.html
+
+heroku create --stack cedar
+git remote set-url heroku git@heroku.com:rocky-temple-7215.git
+git remote show heroku
+git push heroku master
