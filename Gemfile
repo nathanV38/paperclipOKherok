@@ -4,7 +4,8 @@ gem 'rails', '3.2.13'
 
 #gem 'sqlite3'
 gem 'pg'
-gem "paperclip", "~> 3.0"
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

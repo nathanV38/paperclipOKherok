@@ -1,5 +1,5 @@
 class GarmentImage < ActiveRecord::Base
-  attr_accessible :, :, :caption, :garment_id
+  attr_accessible :caption, :garment_id
   
   belongs_to :garment
 has_attached_file :photo,  :styles => { :small => '150×150#', :large => '320×240#' }
