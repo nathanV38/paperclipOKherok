@@ -15,3 +15,24 @@ heroku create --stack cedar
 git remote set-url heroku git@heroku.com:rocky-temple-7215.git
 git remote show heroku
 git push heroku master
+
+heroku run rake db:reset
+heroku run rake db:migrate
+heroku run rake db:drop
+
+posgre commands:
+createdb mabase
+dropdb mabase
+psql mabase
+CREATE TABLE temps (
+    ville           varchar(80),
+    temp_basse      int,           -- température basse
+    temp_haute      int,           -- température haute
+    prcp            real,          -- précipitation
+    date            date
+);
+
+INSERT INTO temps VALUES ('San Francisco', 46, 50, 0.25, '1994-11-27');
+
+http://www.siteduzero.com/informatique/tutoriels/programmation-en-java-api/installation-de-postgresql-2
+
