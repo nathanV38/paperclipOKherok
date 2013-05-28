@@ -1,0 +1,45 @@
+WARNING: `heroku rake` has been deprecated. Please use `heroku run rake` instead.
+Running `rake db:reset` attached to terminal... up, run.4958
+WARNING: `heroku rake` has been deprecated. Please use `heroku run rake` instead.
+Running `rake db:reset` attached to terminal... up, run.6904 !    Heroku client internal error.
+ !    Search for help at: https://help.heroku.com
+ !    Or report a bug at: https://github.com/heroku/heroku/issues/new
+
+    Error:       Une opération a été tentée sur un réseau impossible à atteindre. - connect(2) (Errno::ENETUNREACH)
+    Backtrace:   C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:40:in `initialize'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:40:in `open'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:40:in `block in start'
+                 C:/Program Files/Heroku/ruby-1.9.2/lib/ruby/1.9.1/timeout.rb:68:in `timeout'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:31:in `start'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command/run.rb:132:in `rendezvous_session'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command/run.rb:119:in `run_attached'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command/run.rb:79:in `rake'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command.rb:206:in `run'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/cli.rb:28:in `start'
+                 C:/Program Files/Heroku/bin/heroku:29:in `<main>'
+
+    Command:     heroku rake db:reset
+    Version:     heroku/toolbelt/2.39.3 (i386-mingw32) ruby/1.9.3
+
+
+Running `rake db:reset` attached to terminal... up, run.7794 !    Heroku client internal error.
+ !    Search for help at: https://help.heroku.com
+ !    Or report a bug at: https://github.com/heroku/heroku/issues/new
+
+    Error:       Une opération a été tentée sur un réseau impossible à atteindre. - connect(2) (Errno::ENETUNREACH)
+    Backtrace:   C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:40:in `initialize'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:40:in `open'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:40:in `block in start'
+                 C:/Program Files/Heroku/ruby-1.9.2/lib/ruby/1.9.1/timeout.rb:68:in `timeout'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/client/rendezvous.rb:31:in `start'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command/run.rb:132:in `rendezvous_session'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command/run.rb:119:in `run_attached'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command/run.rb:24:in `index'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/command.rb:206:in `run'
+                 C:/Documents and Settings/admin/.heroku/client/lib/heroku/cli.rb:28:in `start'
+                 C:/Program Files/Heroku/bin/heroku:29:in `<main>'
+
+    Command:     heroku run rake db:reset
+    Version:     heroku/toolbelt/2.39.3 (i386-mingw32) ruby/1.9.3
+
+

@@ -1,0 +1,101 @@
+2013-05-28T13:06:47.115694+00:00 app[run.8820]: Connecting to database specified by DATABASE_URL
+2013-05-28T13:06:47.493299+00:00 app[run.8820]: NOTICE:  CREATE TABLE will create implicit sequence "users_id_seq" for serial column "users.id"
+2013-05-28T13:06:47.486450+00:00 app[run.8820]: Migrating to CreateUsers (20130507093927)
+2013-05-28T13:06:47.489970+00:00 app[run.8820]: ==  CreateUsers: migrating ====================================================
+2013-05-28T13:06:47.490039+00:00 app[run.8820]: -- create_table(:users)
+2013-05-28T13:06:47.524444+00:00 app[run.8820]: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "users_pkey" for table "users"
+2013-05-28T13:06:47.549206+00:00 app[run.8820]:    -> 0.0589s
+2013-05-28T13:06:47.549206+00:00 app[run.8820]: ==  CreateUsers: migrated (0.0591s) ===========================================
+2013-05-28T13:06:47.549206+00:00 app[run.8820]: 
+2013-05-28T13:06:47.574157+00:00 app[run.8820]: -- create_table(:categories)
+2013-05-28T13:06:47.570229+00:00 app[run.8820]: Migrating to CreateCategories (20130507093951)
+2013-05-28T13:06:47.573997+00:00 app[run.8820]: ==  CreateCategories: migrating ===============================================
+2013-05-28T13:06:47.578794+00:00 app[run.8820]: NOTICE:  CREATE TABLE will create implicit sequence "categories_id_seq" for serial column "categories.id"
+2013-05-28T13:06:47.581863+00:00 app[run.8820]: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "categories_pkey" for table "categories"
+2013-05-28T13:06:47.644434+00:00 app[run.8820]:    -> 0.0686s
+2013-05-28T13:06:47.644724+00:00 app[run.8820]: ==  CreateCategories: migrated (0.0706s) ======================================
+2013-05-28T13:06:47.644890+00:00 app[run.8820]: 
+2013-05-28T13:06:47.686365+00:00 app[run.8820]: Migrating to AddCategoryIdToUsers (20130507094335)
+2013-05-28T13:06:47.712859+00:00 app[run.8820]: ==  AddCategoryIdToUsers: migrating ===========================================
+2013-05-28T13:06:47.712859+00:00 app[run.8820]: -- add_column(:users, :category_id, :integer)
+2013-05-28T13:06:47.725960+00:00 app[run.8820]:    -> 0.0129s
+2013-05-28T13:06:47.726026+00:00 app[run.8820]: ==  AddCategoryIdToUsers: migrated (0.0131s) ==================================
+2013-05-28T13:06:47.726026+00:00 app[run.8820]: 
+2013-05-28T13:06:47.785887+00:00 app[run.8820]: Migrating to AddAttachmentPhotoToUsers (20130507095307)
+2013-05-28T13:06:47.789193+00:00 app[run.8820]: ==  AddAttachmentPhotoToUsers: migrating ======================================
+2013-05-28T13:06:47.789333+00:00 app[run.8820]: -- change_table(:users)
+2013-05-28T13:06:47.822622+00:00 app[run.8820]:    -> 0.0331s
+2013-05-28T13:06:47.822622+00:00 app[run.8820]: ==  AddAttachmentPhotoToUsers: migrated (0.0334s) =============================
+2013-05-28T13:06:47.822622+00:00 app[run.8820]: 
+2013-05-28T13:06:47.873964+00:00 app[run.8820]: Migrating to FixColumnName (20130507114016)
+2013-05-28T13:06:47.902745+00:00 app[run.8820]: ==  FixColumnName: migrating ==================================================
+2013-05-28T13:06:47.902745+00:00 app[run.8820]: -- rename_column(:users, :price, :age)
+2013-05-28T13:06:47.913956+00:00 app[run.8820]: 
+2013-05-28T13:06:47.913956+00:00 app[run.8820]: ==  FixColumnName: migrated (0.0112s) =========================================
+2013-05-28T13:06:47.913956+00:00 app[run.8820]:    -> 0.0110s
+2013-05-28T13:06:47.980547+00:00 app[run.8820]: Migrating to CreateGarments (20130507115513)
+2013-05-28T13:06:47.995817+00:00 app[run.8820]: -- create_table(:garments)
+2013-05-28T13:06:47.995817+00:00 app[run.8820]: ==  CreateGarments: migrating =================================================
+2013-05-28T13:06:48.009609+00:00 app[run.8820]: NOTICE:  CREATE TABLE will create implicit sequence "garments_id_seq" for serial column "garments.id"
+2013-05-28T13:06:48.042294+00:00 app[run.8820]: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "garments_pkey" for table "garments"
+2013-05-28T13:06:48.060804+00:00 app[run.8820]:    -> 0.0647s
+2013-05-28T13:06:48.061050+00:00 app[run.8820]: ==  CreateGarments: migrated (0.0652s) ========================================
+2013-05-28T13:06:48.061150+00:00 app[run.8820]: 
+2013-05-28T13:06:48.099117+00:00 app[run.8820]: Migrating to CreateSizes (20130507115632)
+2013-05-28T13:06:48.103175+00:00 app[run.8820]: ==  CreateSizes: migrating ====================================================
+2013-05-28T13:06:48.103263+00:00 app[run.8820]: -- create_table(:sizes)
+2013-05-28T13:06:48.105966+00:00 app[run.8820]: NOTICE:  CREATE TABLE will create implicit sequence "sizes_id_seq" for serial column "sizes.id"
+2013-05-28T13:06:48.108228+00:00 app[run.8820]: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "sizes_pkey" for table "sizes"
+2013-05-28T13:06:48.162494+00:00 app[run.8820]: 
+2013-05-28T13:06:48.162494+00:00 app[run.8820]: ==  CreateSizes: migrated (0.0593s) ===========================================
+2013-05-28T13:06:48.171577+00:00 app[run.8820]: Migrating to AddSizeIdToGarments (20130507120000)
+2013-05-28T13:06:48.175261+00:00 app[run.8820]: -- add_column(:garments, :size_id, :integer)
+2013-05-28T13:06:48.175261+00:00 app[run.8820]: ==  AddSizeIdToGarments: migrating ============================================
+2013-05-28T13:06:48.162494+00:00 app[run.8820]:    -> 0.0591s
+2013-05-28T13:06:48.177893+00:00 app[run.8820]:    -> 0.0025s
+2013-05-28T13:06:48.177982+00:00 app[run.8820]: ==  AddSizeIdToGarments: migrated (0.0027s) ===================================
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:537:in `load_migration'
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+2013-05-28T13:06:48.186114+00:00 app[run.8820]: Migrating to CreateGarmentImages (20130507150810)
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+2013-05-28T13:06:48.191529+00:00 app[run.8820]: /app/db/migrate/20130507150810_create_garment_images.rb:5: syntax error, unexpected ':'
+2013-05-28T13:06:48.191529+00:00 app[run.8820]: /app/db/migrate/20130507150810_create_garment_images.rb:7: syntax error, unexpected ':'
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/transactions.rb:208:in `transaction'
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:528:in `migrate'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:700:in `each'
+2013-05-28T13:06:48.177982+00:00 app[run.8820]: 
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:775:in `ddl_transaction'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/task.rb:241:in `each'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/task.rb:246:in `call'
+2013-05-28T13:06:48.192995+00:00 app[run.8820
+]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:775:in `call'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/railties/databases.rake:193:in `block (2 levels) in <top (required)>'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/task.rb:177:in `invoke_with_call_chain'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:101:in `block in top_level'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/task.rb:184:in `block in invoke_with_call_chain'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:101:in `each'
+2013-05-28T13:06:48.193932+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:70:in `run'
+2013-05-28T13:06:48.194322+00:00 app[run.8820]: (See full trace by running task with --trace)
+2013-05-28T13:06:48.191422+00:00 app[run.8820]: rake aborted!
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:570:in `up'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:700:in `migrate'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:143:in `invoke_task'
+2013-05-28T13:06:48.193932+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:110:in `run_with_threads'
+2013-05-28T13:06:48.192995+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:533:in `migration'
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:719:in `block in migrate'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/task.rb:241:in `execute'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:101:in `block (2 levels) in top_level'
+2013-05-28T13:06:48.194202+00:00 app[run.8820]: Tasks: TOP => db:migrate
+2013-05-28T13:06:48.193326+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.13/lib/active_record/migration.rb:551:in `migrate'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/task.rb:246:in `block in execute'
+2013-05-28T13:06:48.193932+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:73:in `block in run'
+2013-05-28T13:06:48.193932+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:160:in `standard_exception_handling'
+2013-05-28T13:06:48.193932+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/application.rb:95:in `top_level'
+2013-05-28T13:06:48.193629+00:00 app[run.8820]: /app/vendor/bundle/ruby/1.9.1/gems/rake-10.0.4/lib/rake/task.rb:170:in `invoke'
+2013-05-28T13:06:49.459510+00:00 heroku[run.8820]: Process exited with status 1
+2013-05-28T13:06:49.473361+00:00 heroku[run.8820]: State changed from up to complete

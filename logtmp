@@ -1,0 +1,63 @@
+2013-05-28T12:35:14.008834+00:00 heroku[api]: Enable Logplex by nathan.vincent38@gmail.com
+2013-05-28T12:35:14.021458+00:00 heroku[api]: Release v2 created by nathan.vincent38@gmail.com
+2013-05-28T12:39:30.310999+00:00 heroku[slugc]: Slug compilation started
+2013-05-28T12:41:09.800430+00:00 heroku[api]: Scale to web=1 by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.522853+00:00 heroku[api]: Attach HEROKU_POSTGRESQL_CHARCOAL resource by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.612233+00:00 heroku[api]: Release v3 created by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.707583+00:00 heroku[api]: Add DATABASE_URL config by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.731707+00:00 heroku[api]: Release v4 created by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.780783+00:00 heroku[api]: Add  config by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.811769+00:00 heroku[api]: Release v5 created by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.866225+00:00 heroku[api]: Deploy b9fc241 by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.907186+00:00 heroku[api]: Release v6 created by nathan.vincent38@gmail.com
+2013-05-28T12:41:10.945341+00:00 heroku[api]: Deploy b9fc241 by nathan.vincent38@gmail.com
+2013-05-28T12:41:11.514719+00:00 heroku[slugc]: Slug compilation finished
+2013-05-28T12:41:12.691266+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 13094`
+2013-05-28T12:41:13.241485+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 3006`
+2013-05-28T12:41:16.666043+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-28T12:41:16.666043+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-28T12:41:17.568449+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-28T12:41:17.568321+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-28T12:41:19.984298+00:00 app[web.1]: => Rails 3.2.13 application starting in production on http://0.0.0.0:3006
+2013-05-28T12:41:19.984298+00:00 app[web.1]: => Call with -d to detach
+2013-05-28T12:41:19.984298+00:00 app[web.1]: => Ctrl-C to shutdown server
+2013-05-28T12:41:19.984298+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2013-05-28T12:41:19.984298+00:00 app[web.1]: => Booting WEBrick
+2013-05-28T12:41:20.275958+00:00 app[web.1]: [2013-05-28 12:41:20] INFO  WEBrick 1.3.1
+2013-05-28T12:41:20.276034+00:00 app[web.1]: [2013-05-28 12:41:20] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2013-05-28T12:41:20.276443+00:00 app[web.1]: [2013-05-28 12:41:20] INFO  WEBrick::HTTPServer#start: pid=2 port=3006
+2013-05-28T12:41:20.487128+00:00 heroku[web.1]: State changed from starting to up
+2013-05-28T12:41:23.559317+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2013-05-28T12:41:23.559317+00:00 app[web.1]: => Rails 3.2.13 application starting in production on http://0.0.0.0:13094
+2013-05-28T12:41:23.559317+00:00 app[web.1]: => Call with -d to detach
+2013-05-28T12:41:23.559317+00:00 app[web.1]: => Booting WEBrick
+2013-05-28T12:41:23.559317+00:00 app[web.1]: => Ctrl-C to shutdown server
+2013-05-28T12:41:24.184172+00:00 app[web.1]: [2013-05-28 12:41:24] INFO  WEBrick::HTTPServer#start: pid=2 port=13094
+2013-05-28T12:41:24.183894+00:00 app[web.1]: [2013-05-28 12:41:24] INFO  WEBrick 1.3.1
+2013-05-28T12:41:24.183894+00:00 app[web.1]: [2013-05-28 12:41:24] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2013-05-28T12:41:29.942291+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2013-05-28T12:41:30.898275+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2013-05-28T12:41:30.898275+00:00 app[web.1]: [2013-05-28 12:41:30] ERROR SignalException: SIGTERM
+2013-05-28T12:41:39.132270+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2013-05-28T12:41:39.132525+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2013-05-28T12:41:41.813313+00:00 heroku[web.1]: Process exited with status 137
+2013-05-28T12:41:43.150952+00:00 app[web.1]: Started GET "/" for 217.128.135.172 at 2013-05-28 12:41:43 +0000
+2013-05-28T12:41:43.247478+00:00 app[web.1]: Processing by UsersController#index as HTML
+2013-05-28T12:41:43.353668+00:00 app[web.1]: Completed 500 Internal Server Error in 106ms
+2013-05-28T12:41:43.355671+00:00 app[web.1]: 
+2013-05-28T12:41:43.355671+00:00 app[web.1]: ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "users" does not exist
+2013-05-28T12:41:43.355671+00:00 app[web.1]: LINE 5:              WHERE a.attrelid = '"users"'::regclass
+2013-05-28T12:41:43.355671+00:00 app[web.1]: :             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2013-05-28T12:41:43.355671+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+2013-05-28T12:41:43.355671+00:00 app[web.1]:               FROM pg_attribute a LEFT JOIN pg_attrdef d
+2013-05-28T12:41:43.355671+00:00 app[web.1]:                                         ^
+2013-05-28T12:41:43.355671+00:00 app[web.1]:              WHERE a.attrelid = '"users"'::regclass
+2013-05-28T12:41:43.355987+00:00 app[web.1]: ):
+2013-05-28T12:41:43.355987+00:00 app[web.1]: 
+2013-05-28T12:41:43.355671+00:00 app[web.1]:                AND a.attnum > 0 AND NOT a.attisdropped
+2013-05-28T12:41:43.355987+00:00 app[web.1]:              ORDER BY a.attnum
+2013-05-28T12:41:43.355987+00:00 app[web.1]: 
+2013-05-28T12:41:43.355987+00:00 app[web.1]:   app/controllers/users_controller.rb:5:in `index'
+2013-05-28T12:41:43.355671+00:00 app[web.1]:                 ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2013-05-28T12:41:43.366558+00:00 heroku[router]: at=info method=GET path=/ host=obscure-coast-3374.herokuapp.com fwd="217.128.135.172" dyno=web.1 connect=2ms service=270ms status=500 bytes=643
+2013-05-28T12:41:43.592795+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=obscure-coast-3374.herokuapp.com fwd="217.128.135.172" dyno=web.1 connect=6ms service=18ms status=200 bytes=0

@@ -36,3 +36,31 @@ INSERT INTO temps VALUES ('San Francisco', 46, 50, 0.25, '1994-11-27');
 
 http://www.siteduzero.com/informatique/tutoriels/programmation-en-java-api/installation-de-postgresql-2
 
+********************************************
+Installation postgre windows:
+http://www.dalibo.org/installation_de_postgresql_8.4_sous_windows
+postgres
+pw **NV38
+
+si pb encodage en console sous windows:
+http://blog.postgresql.fr/public/Doc_postgresql_9_0.pdf
+
+psql tuto:
+http://www.postgresql.org/docs/8.0/static/tutorial-accessdb.html
+
+********************************************
+git remote rm heroku
+heroku git:remote -a obscure-coast-3374
+git push heroku master
+heroku logs
+
+heroku pg:reset DATABASE
+cf:
+http://stackoverflow.com/questions/4820549/how-to-empty-db-in-heroku
+
+heroku pg help
+heroku pg:reset DATABASE_URL
+
+heroku run:detached rake db:migrate
+heroku logs -p run.8820
+heroku restart
